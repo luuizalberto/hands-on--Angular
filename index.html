@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
+</head>
+<body>
+
+    <!--
+        A diretiva "ng-app" define um aplicativo AngularJS.
+
+        A diretiva "ng-model" vincula o valor dos controles HTML (input, select, textarea) aos dados do aplicativo.
+
+        A diretiva "ng-bind" liga os dados do aplicativo à visualização HTML.
+    -->
+
+
+    <!-- A diretiva ng-app informa ao AngularJS que o elemento <div> é o "proprietário" de um aplicativo AngularJS.
+    <div ng-app=""> 
+        <p>A soma de 5 + 5 é: {{5+5}} </p>
+    </div>
+    -->
+
+    <div ng-app="" ng-init="minhaCor='lightblue'">
+        <input style="background-color:{{minhaCor}}" ng-model="minhaCor">
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+</body>
+</html>
