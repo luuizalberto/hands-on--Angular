@@ -23,19 +23,13 @@
     </div>
     -->
 
+    <div ng-app="" ng-init="minhaCor='lightblue'; name='Luiz'; sobrenome='Alberto'">
+        <input style="background-color:{{minhaCor}}" ng-model="minhaCor">
+        <p> {{name}} {{sobrenome}} </p>
+    </div>
+
+
     
-
-
-    <div ng-app="myApp" ng-controller="myCtrl">
-        Name: <input ng-model="name">
-      </div>
-      
-      <script>
-      var app = angular.module('myApp', []);
-      app.controller('myCtrl', function($scope) {
-        $scope.name = "John Doe";
-      });
-      </script>
 
 
 <script src="Angular.js"></script>
