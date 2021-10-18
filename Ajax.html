@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Requisição http com ajax</title>
-</head>
-<body>
 
-    <div ng-app="myApp" ng-controller="myCtrl">
-
-       
-        <h1>{{resposta}}</h1>
-        
-    </div>
+<!-- ARQUIVO PARA EXEMPLO DE REQUISIÇÃO -->
 
 
-    <script src="Angular.js"></script>
-    <script>
-        var app = angular.module('myApp', []);
-        app.controller('myCtrl', function($scope, $http) {
-        $http.get("index.html")
-        .then(function(response) {
-            $scope.resposta = response.data;
-        });
-        });
-    </script>
-    
-</body>
-</html>
+<h1>Olá mundo!</h1>
