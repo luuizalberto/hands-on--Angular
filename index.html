@@ -8,11 +8,20 @@
 </head>
 <body>
 
+
+    <!-- CODIGO COM AJAX -->
 <!-- <div ng-app="myApp" ng-controller="myCtrl">
 
     <div ng-bind-html="resposta"></div>
     
 </div> -->
+
+    <!-- CODIGO DO FILTER -->
+    <div ng-app="myApp" ng-controller="myCtrl">
+
+        <p>The name is {{ lastName | uppercase }}</p>
+    
+    </div>
 
 
 
@@ -30,7 +39,7 @@
 
         app.controller('myCtrl', function($scope, $http, $sce) {
 
-
+            $scope.lastName = "Alberto";
             
             // $http(obj).then(function mySuccess(response) {
             //     $scope.resposta = $sce.trustAsHtml(response.data);
