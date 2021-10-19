@@ -1,6 +1,7 @@
 var app = angular.module("myShoppingList", []);
 app.controller("myCtrl", function($scope) {
   $scope.produtos = ["Milk", "Bread", "Cheese", "Outro"];
+
   $scope.addItem = function () {
     $scope.errortext = " ";
     if (!$scope.item) {return;}
@@ -9,7 +10,11 @@ app.controller("myCtrl", function($scope) {
     } else {
       $scope.errortext = "Este item ja se encontra no seu carrinho.";
       console.log($scope.errortext)
-    }
-      
+    }  
   }
+
+  $scope.removerItem = function (x) {
+      $scope.produtos.splice(x,1);
+  }
+
 });

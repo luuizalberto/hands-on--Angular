@@ -11,7 +11,9 @@
 
     <div ng-app="myShoppingList" ng-controller="myCtrl">
         <ul>
-            <li ng-repeat="x in produtos">{{x}}</li>
+            <li ng-repeat="x in produtos">
+                {{x}} <span style="cursor: pointer;" ng-click="removerItem($index)">&times;</span>
+            </li>
         </ul>
         <input ng-model="item">
         <button ng-click="addItem()">Adicionar no carrinho!</button>
