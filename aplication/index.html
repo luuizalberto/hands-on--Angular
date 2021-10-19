@@ -7,7 +7,16 @@
     <title>Aplicação Angular</title>
 </head>
 <body>
-    
+
+
+    <div ng-app="myShoppingList" ng-controller="myCtrl">
+        <ul>
+          <li ng-repeat="n in nomes">{{n}}</li>
+        </ul>
+        <ul>
+            <li ng-repeat="x in produtos">{{x}}</li>
+        </ul>
+    </div>
 
 
 
