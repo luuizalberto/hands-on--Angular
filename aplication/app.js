@@ -2,6 +2,14 @@ var app = angular.module("myShoppingList", []);
 app.controller("myCtrl", function($scope) {
   $scope.produtos = ["Milk", "Bread", "Cheese", "Outro"];
   $scope.addItem = function () {
+    $scope.errortext = " ";
+    if (!$scope.item) {return;}
+    if ($scope.produtos.indexOf($scope.item) == -1) {
       $scope.produtos.push($scope.item);
+    } else {
+      $scope.errortext = "Este item ja se encontra no seu carrinho.";
+      console.log($scope.errortext)
+    }
+      
   }
 });
