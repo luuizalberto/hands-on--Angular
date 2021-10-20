@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Aplicação Angular</title>
 </head>
 <body>
 
-
-    <div ng-app="myShoppingList" ng-controller="myCtrl">
+<div class="container">
+    <div class="carrinho" ng-app="myShoppingList" ng-controller="myCtrl">
+            <h2>Minha Lista de Compras</h2>
         <ul>
             <li ng-repeat="x in produtos">
                 {{x}} <span style="cursor: pointer;" ng-click="removerItem($index)">&times;</span>
@@ -18,7 +20,7 @@
         <input ng-model="item">
         <button ng-click="addItem()">Adicionar no carrinho!</button>
     </div>
-
+</div>
 
 
 
