@@ -37,8 +37,17 @@ ul li{
     border-top: 1px solid rgb(207, 207, 207);
 }
 
+ul li:hover{
+    background-color: rgb(247, 247, 247);
+}
+
 ul li span{
     float: right;
+}
+
+ul li span:hover{
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .carrinho input{
@@ -46,7 +55,8 @@ ul li span{
     margin-left: 3px;
     padding-left: 8px;
     width: 60%;
-    height: 25px;
+    height: 35px;
+    line-height: 35px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -54,7 +64,8 @@ ul li span{
 .carrinho button{
     width: calc(40%-5px);
     padding: 0 5px;
-    height: 25px;
+    height: 35px;
+    line-height: 34px;
     font-size: 12px;
     color: white;
     background-color: #4CAF50;
