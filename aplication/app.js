@@ -8,7 +8,7 @@ app.controller("myCtrl", function($scope) {
     if ($scope.produtos.indexOf($scope.item) == -1) {
       $scope.produtos.push($scope.item);
     } else {
-      $scope.errortext = "Este item ja se encontra no seu carrinho.";
+      $scope.errortext = "Este item já está na sua lista de compras.";
       console.log($scope.errortext)
     }  
   }
