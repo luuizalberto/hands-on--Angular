@@ -11,10 +11,11 @@ html, body{
 .container{
     display: flex;
     justify-content: center; /*centraliza na horizontal*/
-    align-items: center;
+
 }
 
 .carrinho{
+    margin-top: 100px;
     width: 350px;
     background-color: rgb(228, 228, 228);
     border-radius: 4px;
@@ -76,6 +77,6 @@ ul li span:hover{
 
 .carrinho button:hover{
     background-color: rgb(19, 158, 14);
-}
+} 
 
 
